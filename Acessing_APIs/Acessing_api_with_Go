@@ -1,0 +1,27 @@
+package main
+
+import (
+"io"
+"net/http"
+"os"
+)
+
+func main() {
+apiURL := "https://api.whoisdatacenter.com/v1/download/nrd?apiKey={place_your_api_key_here}&date=2024-01-31"
+response, err := http.Get(apiURL)
+if err != nil {
+panic(err)
+}
+defer response.Body.Close()
+
+file, err := os.Create("downloaded_data.zip")
+if err != nil {
+panic(err)
+}
+defer file.Close()
+
+_, err = io.Copy(file, response.Body)
+if err != nil {
+panic(err)
+}
+}
