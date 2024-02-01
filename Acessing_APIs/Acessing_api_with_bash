@@ -1,0 +1,6 @@
+#!/bin/bash
+
+api_url="https://api.whoisdatacenter.com/v1/download/nrd?apiKey={place_your_api_key_here}&date=2024-01-31"
+output_file="downloaded_data.zip"
+
+curl -o "$output_file" "$api_url"
