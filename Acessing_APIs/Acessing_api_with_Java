@@ -1,0 +1,18 @@
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
+public class DownloadData {
+public static void main(String[] args) throws Exception {
+String apiURL = "https://api.whoisdatacenter.com/v1/download/nrd?apiKey={place_your_api_key_here}&date=2024-01-31";
+URL url = new URL(apiURL);
+try (InputStream in = url.openStream();
+FileOutputStream fos = new FileOutputStream("downloaded_data.zip")) {
+byte[] buffer = new byte[1024];
+int bytesRead;
+while ((bytesRead = in.read(buffer)) != -1) {
+fos.write(buffer, 0, bytesRead);
+}
+}
+}
+}
