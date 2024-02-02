@@ -6,7 +6,7 @@
 **Introduction**
  <br />
 
-Welcome to , your premier resource for discovering and analyzing the freshest additions to the internet's domain landscape. This API is meticulously crafted to provide immediate access to information about domains that have just entered the digital world. Whether you're a cybersecurity expert monitoring for potential threats, a market researcher tracking industry trends, or a digital marketing strategist seeking new opportunities, our API delivers the vital data you need.
+**Welcome to , your premier resource for discovering and analyzing the freshest additions to the internet's domain landscape. This API is meticulously crafted to provide immediate access to information about domains that have just entered the digital world. Whether you're a cybersecurity expert monitoring for potential threats, a market researcher tracking industry trends, or a digital marketing strategist seeking new opportunities, our API delivers the vital data you need.**
 
 
 ___
